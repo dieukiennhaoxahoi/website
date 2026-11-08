@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thủ tục NOXH Hà Nội – Kiểm tra điều kiện, chuẩn bị hồ sơ nhà ở xã hội</title>
+<meta name="description" content="Kiểm tra điều kiện mua nhà ở xã hội trong 1 phút, danh sách giấy tờ theo từng đối tượng, quy trình nộp hồ sơ, bốc thăm và vay vốn ưu đãi. Cập nhật dự án NOXH Tam Hưng.">
+<style>
+:root{--g:#0E7C66;--g2:#12A383;--d:#0B3B33;--y:#F6B93B;--bg:#F5F8F7;--t:#1E2B28;--m:#5D6B67;--l:#DCE7E3;--w:#fff;--r:#C0392B}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:"Segoe UI",Roboto,Arial,sans-serif;color:var(--t);background:var(--bg);line-height:1.55;font-size:16px}
+a{color:var(--g)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.96);border-bottom:1px solid var(--l)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:58px}
+.logo{font-weight:800;color:var(--d);text-decoration:none;font-size:19px}.logo span{color:var(--g2)}
+.nav nav a{margin-left:16px;text-decoration:none;color:var(--t);font-size:14.5px}
+.btn{display:inline-block;background:var(--g);color:#fff!important;text-decoration:none;border:0;border-radius:10px;padding:12px 20px;font-weight:700;font-size:16px;cursor:pointer}
+.btn.y{background:var(--y);color:var(--d)!important}.btn.o{background:transparent;border:2px solid #fff}
+.hero{background:linear-gradient(135deg,var(--d),var(--g));color:#fff;padding:56px 0 64px}
+.hero h1{font-size:34px;line-height:1.2;margin:0 0 12px}.hero p{font-size:18px;opacity:.92;max-width:620px;margin:0 0 24px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.badges div{background:rgba(255,255,255,.12);border-radius:10px;padding:10px 14px;font-size:14px}
+.badges b{display:block;font-size:20px}
+section{padding:52px 0}section.alt{background:#fff}
+h2{font-size:27px;color:var(--d);margin:0 0 8px}.sub{color:var(--m);margin:0 0 28px}
+.grid{display:grid;gap:16px}.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:#fff;border:1px solid var(--l);border-radius:14px;padding:20px}
+section.alt .card{background:var(--bg)}
+.card h3{margin:0 0 8px;color:var(--d);font-size:18px}
+.proj{display:grid;grid-template-columns:1.1fr 1fr;gap:20px;align-items:stretch}
+.proj .big{background:linear-gradient(160deg,#E4F4EF,#fff);border-radius:14px;padding:22px;border:1px solid var(--l)}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.kv div{background:#fff;border-radius:10px;padding:12px;border:1px solid var(--l)}
+.kv b{display:block;font-size:22px;color:var(--g)}
+.tag{display:inline-block;background:var(--y);color:var(--d);font-weight:700;font-size:12.5px;border-radius:20px;padding:3px 10px;margin-bottom:8px}
+/* checker */
+.chk{background:#fff;border-radius:16px;border:1px solid var(--l);padding:22px;max-width:720px;margin:0 auto;box-shadow:0 6px 24px rgba(14,124,102,.08)}
+.bar{height:6px;background:var(--l);border-radius:6px;margin-bottom:18px;overflow:hidden}.bar i{display:block;height:100%;background:var(--g2);width:0;transition:.3s}
+.q{display:none}.q.on{display:block}.q h3{margin:0 0 14px;font-size:19px;color:var(--d)}
+.opt{display:block;width:100%;text-align:left;background:var(--bg);border:2px solid var(--l);border-radius:12px;padding:13px 14px;margin:0 0 10px;font-size:15.5px;cursor:pointer;color:var(--t)}
+.opt:hover{border-color:var(--g2)}
+.q input[type=number]{width:100%;font-size:18px;padding:12px;border:2px solid var(--l);border-radius:12px}
+.back{background:none;border:0;color:var(--m);cursor:pointer;margin-top:6px;font-size:14px}
+.res{display:none}.res.on{display:block}
+.res .st{font-size:22px;font-weight:800;margin:0 0 10px}.ok{color:var(--g)}.no{color:var(--r)}.mid{color:#B9770E}
+.res ul{padding-left:20px}
+/* steps */
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.step{background:#fff;border:1px solid var(--l);border-radius:14px;padding:18px 18px 18px 64px;position:relative}
+.step:before{counter-increment:s;content:counter(s);position:absolute;left:16px;top:16px;width:34px;height:34px;border-radius:50%;background:var(--g);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+.step h3{margin:0 0 6px;font-size:16.5px;color:var(--d)}.step p{margin:0;font-size:14.5px;color:var(--m)}
+/* docs tabs */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.tabs button{border:2px solid var(--l);background:#fff;border-radius:20px;padding:8px 14px;cursor:pointer;font-size:14.5px}
+.tabs button.on{background:var(--g);border-color:var(--g);color:#fff}
+.doc{display:none}.doc.on{display:block}.doc li{margin-bottom:6px}
+.warn{background:#FFF4F2;border:1px solid #F5C6BF;border-radius:14px;padding:18px 20px}.warn h3{color:var(--r);margin:0 0 8px}
+details{background:#fff;border:1px solid var(--l);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer;color:var(--d)}details p{margin:10px 0 0;color:var(--t)}
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+form input,form select,form textarea{width:100%;padding:12px;border:2px solid var(--l);border-radius:10px;font-size:15.5px;font-family:inherit;margin-bottom:12px}
+.consent{font-size:13.5px;color:var(--m);display:flex;gap:8px;align-items:flex-start;margin-bottom:14px}.consent input{width:auto;margin-top:3px}
+footer{background:var(--d);color:#cfe3dd;padding:28px 0;font-size:13.5px}footer b{color:#fff}
+.float{position:fixed;right:16px;bottom:16px;z-index:9;background:#0068FF;color:#fff;border-radius:30px;padding:12px 18px;font-weight:700;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+small.src{display:block;color:var(--m);font-size:12.5px;margin-top:10px}
+@media(max-width:760px){.g2,.g3,.steps,.proj,form .row{grid-template-columns:1fr}.nav nav{display:none}.hero h1{font-size:27px}.hero{padding:40px 0 48px}section{padding:40px 0}h2{font-size:23px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="#">Thủ tục <span>NOXH</span></a>
+<nav><a href="#kiem-tra">Kiểm tra điều kiện</a><a href="#du-an">Dự án sắp mở</a><a href="#tin-moi">Tin mới</a><a href="#ho-so">Hồ sơ</a><a href="#quy-trinh">Quy trình</a><a href="#hoi-dap">Hỏi đáp</a></nav>
+<a class="btn" href="tel:0915683568" style="padding:9px 14px;font-size:14px">0915 683 568</a></div></header>
+
+<div class="hero"><div class="wrap">
+<h1>Mua nhà ở xã hội Hà Nội:<br>đủ điều kiện chưa, hồ sơ cần gì?</h1>
+<p>Kiểm tra điều kiện trong 1 phút, nhận danh sách giấy tờ đúng với trường hợp của bạn và được hướng dẫn từng bước đến ngày bốc thăm, ký hợp đồng.</p>
+<div class="cta"><a class="btn y" href="#kiem-tra">Kiểm tra điều kiện ngay</a><a class="btn o" href="#ho-so">Xem hồ sơ cần chuẩn bị</a></div>
+<div class="badges"><div><b>≤ 20 triệu</b>thu nhập/tháng, người độc thân</div><div><b>≤ 40 triệu</b>tổng thu nhập 2 vợ chồng</div><div><b>80% – 25 năm</b>vay ưu đãi tối đa</div></div>
+</div></div>
+
+<section id="kiem-tra"><div class="wrap">
+<h2>Kiểm tra điều kiện mua nhà ở xã hội</h2>
+<p class="sub">Trả lời vài câu hỏi. Kết quả mang tính tham khảo theo quy định hiện hành; hồ sơ thực tế do chủ đầu tư và cơ quan nhà nước xét duyệt.</p>
+<div class="chk">
+<div class="bar"><i id="pb"></i></div>
+<div class="q on" data-k="dt"><h3>1. Bạn thuộc nhóm nào?</h3>
+<button class="opt" data-v="tn">Người thu nhập thấp tại đô thị (làm tự do, kinh doanh nhỏ, làm thuê…)</button>
+<button class="opt" data-v="cn">Công nhân, người lao động tại doanh nghiệp, hợp tác xã</button>
+<button class="opt" data-v="cb">Cán bộ, công chức, viên chức</button>
+<button class="opt" data-v="lltv">Sĩ quan, quân nhân, công an, người làm công tác cơ yếu</button>
+<button class="opt" data-v="uu">Người có công; hộ nghèo, cận nghèo; hộ bị thu hồi đất chưa được bồi thường bằng nhà, đất</button>
+<button class="opt" data-v="sv">Học sinh, sinh viên</button>
+<button class="opt" data-v="khac">Khác / không chắc</button></div>
+
+<div class="q" data-k="ls"><h3>2. Bạn (hoặc vợ/chồng) đã từng mua, thuê mua nhà ở xã hội hoặc hưởng chính sách hỗ trợ nhà ở tại Hà Nội chưa?</h3>
+<button class="opt" data-v="chua">Chưa bao giờ</button><button class="opt" data-v="roi">Đã từng</button></div>
+
+<div class="q" data-k="nha"><h3>3. Nhà ở hiện tại của bạn và vợ/chồng tại Hà Nội?</h3>
+<button class="opt" data-v="khong">Không đứng tên nhà ở nào tại Hà Nội</button>
+<button class="opt" data-v="nho">Có nhà nhưng bình quân dưới 15 m² sàn/người</button>
+<button class="opt" data-v="co">Có nhà từ 15 m²/người trở lên</button></div>
+
+<div class="q" data-k="hn"><h3>4. Tình trạng hôn nhân?</h3>
+<button class="opt" data-v="dt">Độc thân</button><button class="opt" data-v="dtcon">Độc thân, đang nuôi con dưới 18 tuổi</button><button class="opt" data-v="kh">Đã kết hôn</button></div>
+
+<div class="q" data-k="tn"><h3>5. Thu nhập bình quân thực nhận mỗi tháng trong 12 tháng gần nhất (triệu đồng)?</h3>
+<p id="tnhint" style="color:var(--m);margin-top:-6px"></p>
+<input type="number" id="tnv" min="0" step="0.5" placeholder="Ví dụ: 18">
+<button class="btn" id="tnok" style="margin-top:12px">Xem kết quả</button></div>
+
+<div class="res" id="res"><p class="st" id="rst"></p><ul id="rli"></ul>
+<a class="btn" href="#dang-ky">Nhận tư vấn hồ sơ miễn phí</a> <button class="back" id="again">Làm lại</button></div>
+<button class="back" id="bk" style="display:none">← Quay lại</button>
+</div>
+</div></section>
+
+<section class="alt" id="du-an"><div class="wrap">
+<h2>Dự án NOXH sắp mở tại Hà Nội</h2><p class="sub">30 dự án đã được TP chấp thuận chủ trương đầu tư, tổng 32.748 căn, dự kiến hoàn thành 2027–2030. Chưa phải thông báo mở bán – đăng ký để được báo khi dự án mở nhận hồ sơ.</p>
+<div class="tabs" id="rg"><button class="on" data-r="all">Tất cả</button><button data-r="nam">Phía Nam</button><button data-r="dong">Long Biên – Gia Lâm</button><button data-r="bac">Phía Bắc</button><button data-r="tay">Phía Tây</button></div>
+<div class="grid g3">
+<div class="card pj" data-r="nam"><span class="tag">Dự kiến xong 2029</span><h3>Khu NOXH Bình Minh</h3><p style="margin:0;color:var(--m)">Xã Bình Minh · Liên danh Nam Sơn Invest – TSG</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">3.572 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5640/QĐ-UBND 14/11/2025</span></p></div>
+<div class="card pj" data-r="nam"><span class="tag">Dự kiến xong 2030</span><h3>NOXH Tây Vành đai 4</h3><p style="margin:0;color:var(--m)">Xã Bình Minh · CTCP Đô thị Bình Minh Invest</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">3.024 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 6242/QĐ-UBND 15/12/2025</span></p></div>
+<div class="card pj" data-r="nam"><span class="tag">Dự kiến xong 2030</span><h3>Khu NOXH Tam Hưng 1</h3><p style="margin:0;color:var(--m)">Xã Tam Hưng · CTCP Kinh doanh Địa ốc Hải Phát</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">2.910 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 3031/QĐ-UBND 16/6/2026</span></p></div>
+<div class="card pj" data-r="nam"><span class="tag">Dự kiến xong 2030</span><h3>Khu NOXH Tam Hưng 2</h3><p style="margin:0;color:var(--m)">Xã Tam Hưng · CTCP Kinh doanh Địa ốc Hải Phát</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">2.248 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 3030/QĐ-UBND 16/6/2026</span></p></div>
+<div class="card pj" data-r="nam"><span class="tag">Dự kiến xong 2030</span><h3>Khu NOXH Tam Hưng (TCG)</h3><p style="margin:0;color:var(--m)">Xã Tam Hưng · CTCP ĐT&PT đô thị TCG</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">1.754 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5981/QĐ-UBND 02/12/2025</span></p></div>
+<div class="card pj" data-r="nam"><span class="tag">Dự kiến xong 2030</span><h3>Khu NOXH Bình Đà</h3><p style="margin:0;color:var(--m)">Xã Bình Minh · CTCP ĐT&PT đô thị Nam Hà Nội</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">1.738 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5980/QĐ-UBND 02/12/2025</span></p></div>
+<div class="card pj" data-r="nam"><span class="tag">Dự kiến xong 2030</span><h3>NOXH La Tinh – Đông La</h3><p style="margin:0;color:var(--m)">P. Yên Nghĩa, Dương Nội, xã An Khánh · CTCP ĐT tư vấn và XD Việt Nam</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">1.559 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5643/QĐ-UBND 14/11/2025</span></p></div>
+<div class="card pj" data-r="nam"><span class="tag">Dự kiến xong 2028</span><h3>NOXH ô OM.21 Thường Tín</h3><p style="margin:0;color:var(--m)">Xã Thường Tín · Công ty Minh An</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">974 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5971/QĐ-UBND 01/12/2025</span></p></div>
+<div class="card pj" data-r="nam"><span class="tag">Dự kiến xong 2028</span><h3>Khu NOXH Bích Hòa</h3><p style="margin:0;color:var(--m)">Xã Bình Minh · Liên danh Nam Anh Invest – ICC BIG</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">400 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5641/QĐ-UBND 14/11/2025</span></p></div>
+<div class="card pj" data-r="nam"><span class="tag">Dự kiến xong 2029</span><h3>NOXH K3 Kim Bài</h3><p style="margin:0;color:var(--m)">Xã Thanh Oai · Liên danh Aka Thanh Oai</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">264 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 6241/QĐ-UBND 15/12/2025</span></p></div>
+<div class="card pj" data-r="nam"><span class="tag">Dự kiến xong 2027</span><h3>NOXH Đống Đanh</h3><p style="margin:0;color:var(--m)">Phường Phú Lương · CTCP Phú Hòa An Phát</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">210 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5915/QĐ-UBND 27/11/2025</span></p></div>
+<div class="card pj" data-r="nam"><span class="tag">Dự kiến xong 2027</span><h3>NOXH B9 Phú Lương</h3><p style="margin:0;color:var(--m)">Phường Phú Lương · CTCP Đầu tư BĐS Bắc 9</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">195 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5919/QĐ-UBND 27/11/2025</span></p></div>
+<div class="card pj" data-r="dong"><span class="tag">Dự kiến xong 2030</span><h3>Khu NOXH tập trung phía Bắc sông Hồng</h3><p style="margin:0;color:var(--m)">Xã Thuận An · Liên danh Capital Hà Nội – Ecoland</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">3.194 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5972/QĐ-UBND 01/12/2025</span></p></div>
+<div class="card pj" data-r="dong"><span class="tag">Dự kiến xong 2029</span><h3>Khu NOXH B1/CT4 Phúc Lợi</h3><p style="margin:0;color:var(--m)">Phường Phúc Lợi · Liên danh ACD – Gia Bảo – Masterise Homes – Phúc Đồng</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">1.064 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5646/QĐ-UBND 14/11/2025</span></p></div>
+<div class="card pj" data-r="dong"><span class="tag">Dự kiến xong 2028</span><h3>NOXH TQ Gia Lâm</h3><p style="margin:0;color:var(--m)">Xã Gia Lâm · CTCP Đầu tư BĐS Bắc 9</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">941 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5752/QĐ-UBND 21/11/2025</span></p></div>
+<div class="card pj" data-r="dong"><span class="tag">Dự kiến xong 2030</span><h3>NOXH ô C.6/NO12</h3><p style="margin:0;color:var(--m)">Phường Việt Hưng · Tổng Công ty ĐTPT nhà và đô thị</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">616 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5922/QĐ-UBND 27/11/2025</span></p></div>
+<div class="card pj" data-r="dong"><span class="tag">Dự kiến xong 2027</span><h3>NOXH HH5 Long Biên</h3><p style="margin:0;color:var(--m)">Phường Bồ Đề · Liên danh Hải Sơn Long Biên</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">476 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5654/QĐ-UBND 14/11/2025</span></p></div>
+<div class="card pj" data-r="dong"><span class="tag">Dự kiến xong 2029</span><h3>NOXH ô E6-NO2</h3><p style="margin:0;color:var(--m)">Phường Long Biên · CTCP tư vấn đầu tư tài chính Toàn Cầu</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">320 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5975/QĐ-UBND 27/11/2025</span></p></div>
+<div class="card pj" data-r="dong"><span class="tag">Dự kiến xong 2029</span><h3>NOXH ô CT1 Long Biên</h3><p style="margin:0;color:var(--m)">Phường Long Biên · Liên danh XD Bảo tàng HCM – Cổ Linh</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">298 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5671/QĐ-UBND 17/11/2025</span></p></div>
+<div class="card pj" data-r="bac"><span class="tag">Dự kiến xong 2028</span><h3>Khu NOXH sinh thái Đầm Sen</h3><p style="margin:0;color:var(--m)">Xã Phù Đổng · Liên danh Ecolux – Tân Trường Sơn</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">777 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 86/QĐ-UBND 08/01/2026</span></p></div>
+<div class="card pj" data-r="bac"><span class="tag">Dự kiến xong 2028</span><h3>NOXH Thiên Lộc</h3><p style="margin:0;color:var(--m)">Xã Thiên Lộc · CTCP Đầu tư BĐS Bắc 9</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">589 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5751/QĐ-UBND 21/11/2025</span></p></div>
+<div class="card pj" data-r="bac"><span class="tag">Dự kiến xong 2029</span><h3>NOXH Tây Cổ Loa</h3><p style="margin:0;color:var(--m)">Xã Đông Anh · Tổng Công ty 319 – An Sinh</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">546 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 71/QĐ-UBND 08/01/2026</span></p></div>
+<div class="card pj" data-r="bac"><span class="tag">Dự kiến xong 2028</span><h3>NOXH A7 Đông Anh</h3><p style="margin:0;color:var(--m)">Xã Đông Anh · CTCP Đầu tư BĐS Bắc 9</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">394 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5748/QĐ-UBND 21/11/2025</span></p></div>
+<div class="card pj" data-r="bac"><span class="tag">Dự kiến xong 2028</span><h3>NOXH A8 Đông Anh</h3><p style="margin:0;color:var(--m)">Xã Đông Anh · CTCP Đầu tư BĐS Bắc 9</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">324 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5749/QĐ-UBND 21/11/2025</span></p></div>
+<div class="card pj" data-r="bac"><span class="tag">Dự kiến xong 2027</span><h3>NOXH B3 Phúc Thịnh</h3><p style="margin:0;color:var(--m)">Xã Phúc Thịnh · CTCP Đầu tư BĐS Bắc 9</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">200 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5586/QĐ-UBND 13/11/2025</span></p></div>
+<div class="card pj" data-r="tay"><span class="tag">Dự kiến xong 2030</span><h3>NOXH Bắc Phú Cát</h3><p style="margin:0;color:var(--m)">Xã Hòa Lạc · Công ty TNHH Hùng Hưng</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">1.728 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5614/QĐ-UBND 13/11/2025</span></p></div>
+<div class="card pj" data-r="tay"><span class="tag">Dự kiến xong 2030</span><h3>NOXH Quang Trung – Thạch Thất</h3><p style="margin:0;color:var(--m)">Xã Tây Phương · Liên danh Tiến Đạt – Số 16 Hà Nội</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">1.386 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5579/QĐ-UBND 12/11/2025</span></p></div>
+<div class="card pj" data-r="tay"><span class="tag">Dự kiến xong 2027</span><h3>NOXH X1 Sơn Đồng</h3><p style="margin:0;color:var(--m)">Xã Sơn Đồng · Thành Đô Capital</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">432 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5531/QĐ-UBND 10/11/2025</span></p></div>
+<div class="card pj" data-r="tay"><span class="tag">Dự kiến xong 2029</span><h3>NOXH ô CT1B, CT2 Tây Nam Mễ Trì</h3><p style="margin:0;color:var(--m)">Phường Phú Đô · Liên danh DAC – Kinh doanh và PT nhà Hà Nội</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">341 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 6027/QĐ-UBND 04/12/2025</span></p></div>
+<div class="card pj" data-r="tay"><span class="tag">Dự kiến xong 2030</span><h3>NOXH ô CT-02 Phú Diễn</h3><p style="margin:0;color:var(--m)">Phường Phú Diễn · Liên danh KD&PT nhà Hà Nội – Minh Giang</p><p style="margin:8px 0 0"><b style="color:var(--g);font-size:20px">274 căn</b> NOXH<br><span style="font-size:13px;color:var(--m)">QĐ chấp thuận chủ trương 5922/QĐ-UBND 27/11/2025</span></p></div>
+</div>
+<small class="src">Nguồn: Phụ lục 1 Kế hoạch 60/KH-UBND ngày 12/2/2026 của UBND TP Hà Nội và các quyết định chấp thuận chủ trương đầu tư ghi trên từng dự án. Năm hoàn thành theo kế hoạch, có thể thay đổi. Kế hoạch còn hơn 90 dự án đang thẩm định, sẽ cập nhật khi được chấp thuận.</small>
+<p style="margin:18px 0 0"><a class="btn" href="#dang-ky">Nhận thông báo khi dự án mở hồ sơ</a></p>
+</div></section>
+<section id="ho-so"><div class="wrap">
+<h2>Hồ sơ cần chuẩn bị</h2><p class="sub">Chọn đúng nhóm của bạn. Vợ/chồng cũng phải kê khai; giấy tờ đã tích hợp trên VNeID mức 2 không phải nộp bản photo.</p>
+<div class="tabs"><button class="on" data-t="d1">Thu nhập thấp, công nhân, cán bộ</button><button data-t="d2">Lực lượng vũ trang</button><button data-t="d3">Có nhà dưới 15 m²/người</button><button data-t="d4">Người có công, hộ nghèo</button></div>
+<div class="card">
+<div class="doc on" id="d1"><ul><li><b>Mẫu 01</b> – Đơn đăng ký mua, thuê mua nhà ở xã hội (NĐ 261/2025/NĐ-CP).</li><li><b>Mẫu 01a</b> – Giấy xác nhận đối tượng và thu nhập (TT 32/2025/TT-BXD): cơ quan, doanh nghiệp nơi làm việc xác nhận theo bảng lương.</li><li>Người thu nhập thấp <b>không có hợp đồng lao động</b>: <b>Mẫu 05</b> (TT 08/2026/TT-BXD), Công an xã nơi cư trú xác nhận trong 7 ngày.</li><li><b>Mẫu 02</b> – Xác nhận chưa có nhà ở tại Hà Nội (TT 08/2026/TT-BXD), cơ quan đất đai xác nhận trong 7 ngày.</li><li>CCCD của người đứng đơn và vợ/chồng; giấy tờ hôn nhân (nếu có).</li></ul></div>
+<div class="doc" id="d2"><ul><li><b>Mẫu 01</b> – Đơn đăng ký (NĐ 261/2025/NĐ-CP).</li><li>Giấy xác nhận đối tượng theo mẫu của Bộ Công an (TT 56/2024) hoặc Bộ Quốc phòng (TT 94/2024).</li><li><b>Mẫu 04</b> – Xác nhận thu nhập; mức trần tính theo thu nhập sĩ quan cấp Đại tá.</li><li><b>Mẫu 02</b> – Xác nhận chưa có nhà ở tại Hà Nội.</li></ul></div>
+<div class="doc" id="d3"><ul><li>Hồ sơ như nhóm của bạn, thay Mẫu 02 bằng <b>Mẫu 03</b> – Xác nhận có nhà ở bình quân dưới 15 m² sàn/người (TT 05/2024/TT-BXD).</li><li>Diện tích bình quân tính trên người đứng đơn, vợ/chồng, cha mẹ, con có đăng ký thường trú tại căn nhà.</li></ul></div>
+<div class="doc" id="d4"><ul><li><b>Mẫu 01</b> – Đơn đăng ký.</li><li>Giấy tờ chứng minh thuộc diện người có công, hộ nghèo, cận nghèo hoặc bị thu hồi đất chưa được bồi thường bằng nhà, đất.</li><li>Nhóm này <b>không phải chứng minh thu nhập</b>.</li></ul></div>
+<small class="src">Giấy xác nhận có giá trị 12 tháng. Không đăng ký đồng thời nhiều dự án; mỗi người chỉ mua 1 căn.</small>
+</div></div></section>
+
+<section class="alt" id="quy-trinh"><div class="wrap">
+<h2>Quy trình 6 bước</h2><p class="sub">Từ đăng ký đến ký hợp đồng.</p>
+<div class="steps">
+<div class="step"><h3>Đăng ký nhu cầu</h3><p>Theo dõi thông báo mở hồ sơ của dự án; chuẩn bị trước giấy tờ.</p></div>
+<div class="step"><h3>Nộp hồ sơ cho chủ đầu tư</h3><p>Nộp trực tiếp, qua bưu chính, trực tuyến hoặc qua nơi làm việc. Sở Xây dựng không nhận hồ sơ.</p></div>
+<div class="step"><h3>Nhận giấy biên nhận</h3><p>Chủ đầu tư lập danh sách gửi Sở Xây dựng trong 10 ngày sau hạn nộp.</p></div>
+<div class="step"><h3>Kiểm tra trùng chính sách</h3><p>Sở Xây dựng kiểm tra người đã được hưởng chính sách nhà ở, trả lời trong 10 ngày.</p></div>
+<div class="step"><h3>Công bố danh sách, bốc thăm</h3><p>Trong 30 ngày sau hạn nộp. Bốc thăm khi hồ sơ đủ điều kiện nhiều hơn số căn, có giám sát của Sở Xây dựng, UBND và Công an xã.</p></div>
+<div class="step"><h3>Ký hợp đồng, vay vốn</h3><p>Ký khi nhà đủ điều kiện bán; vay tối đa 80% giá trị hợp đồng, tối đa 25 năm.</p></div>
+</div>
+<div class="grid g2" style="margin-top:20px">
+<div class="card"><h3>Vay vốn ưu đãi</h3><ul style="padding-left:20px;margin:0"><li>Qua Ngân hàng Chính sách xã hội hoặc ngân hàng được chỉ định.</li><li>Tối đa <b>80%</b> giá trị hợp đồng, thời hạn tối đa <b>25 năm</b>.</li><li>Lãi suất bằng mức cho vay hộ nghèo, hiện khoảng <b>5,4%/năm</b> – kiểm tra lại với ngân hàng khi vay.</li><li>Thế chấp bằng chính căn hộ mua.</li></ul></div>
+<div class="warn"><h3>Cảnh giác</h3><ul style="padding-left:20px;margin:0"><li>Đặt cọc cho chủ đầu tư trước khi có thông báo mở bán là sai quy định.</li><li>Không có “suất ngoại giao”, không ai bảo đảm trúng bốc thăm.</li><li>Khai gian hồ sơ để trục lợi có thể bị xử lý hình sự.</li></ul></div>
+</div></div></section>
+
+<section id="tin-moi"><div class="wrap">
+<h2>Tin mới về nhà ở xã hội</h2><p class="sub">Dự án mới mở hồ sơ, quy định mới – cập nhật thường xuyên.</p>
+<div class="grid g3">
+<div class="card"><span class="tag">Quy định</span><h3>Mức thu nhập mới: 20 – 30 – 40 triệu/tháng</h3><p style="margin:0;color:var(--m)">Độc thân tối đa 20 triệu; độc thân nuôi con nhỏ 30 triệu; vợ chồng tổng 40 triệu (NĐ 261/2025/NĐ-CP).</p></div>
+<div class="card"><span class="tag">Quy định</span><h3>Mẫu giấy xác nhận mới từ 15/02/2026</h3><p style="margin:0;color:var(--m)">TT 08/2026/TT-BXD ban hành Mẫu 02 (chưa có nhà) và Mẫu 05 (thu nhập không có hợp đồng lao động). Giấy xác nhận có giá trị 12 tháng.</p></div>
+<div class="card"><span class="tag">Dự án</span><h3>NOXH Tam Hưng 1 &amp; 2 dự kiến động thổ 12/2026</h3><p style="margin:0;color:var(--m)">Hơn 5.100 căn NOXH tại xã Tam Hưng, Hà Nội. Đăng ký để nhận thông báo khi mở hồ sơ.</p></div>
+</div></div></section>
+
+<section id="hoi-dap"><div class="wrap">
+<h2>Hỏi đáp thường gặp</h2>
+<details><summary>Vợ/chồng tôi có nhà ở quê thì có được mua không?</summary><p>Điều kiện nhà ở xét tại tỉnh, thành nơi có dự án. Nếu cả hai vợ chồng chưa có nhà tại Hà Nội (hoặc có nhưng dưới 15 m²/người) thì vẫn đáp ứng điều kiện nhà ở.</p></details>
+<details><summary>Thu nhập tính thế nào?</summary><p>Thu nhập bình quân thực nhận trong 12 tháng liền kề. Độc thân tối đa 20 triệu/tháng; độc thân nuôi con dưới tuổi thành niên tối đa 30 triệu; đã kết hôn tổng hai vợ chồng tối đa 40 triệu.</p></details>
+<details><summary>Tôi làm tự do, không có hợp đồng lao động?</summary><p>Bạn thuộc nhóm người thu nhập thấp tại đô thị; Công an xã nơi cư trú xác nhận thu nhập theo Mẫu 05 dựa trên kê khai, cam kết của bạn, trong 7 ngày.</p></details>
+<details><summary>Đứng tên đất nông nghiệp có được mua không?</summary><p>Theo giải đáp trong cẩm nang hướng dẫn của cơ quan nhà nước, đã đứng tên Giấy chứng nhận đất nông nghiệp, đất cây lâu năm vẫn không đáp ứng. Nên hỏi kỹ trường hợp cụ thể trước khi nộp.</p></details>
+<details><summary>Có được nộp hồ sơ nhiều dự án cùng lúc không?</summary><p>Không. Mỗi người chỉ đăng ký một dự án tại một thời điểm và chỉ được mua một căn.</p></details>
+<details><summary>Ai được ưu tiên, không phải bốc thăm?</summary><p>Theo tỷ lệ quy định: người có công, thân nhân liệt sĩ, người khuyết tật, người tái định cư, nữ giới đơn thân hoặc là chủ hộ.</p></details>
+</div></section>
+
+<section class="alt" id="dang-ky"><div class="wrap">
+<h2>Đăng ký nhận tư vấn hồ sơ</h2><p class="sub">Chúng tôi gọi lại hướng dẫn giấy tờ đúng trường hợp của bạn và báo ngay khi dự án mở nhận hồ sơ.</p>
+<form class="card" id="fm" style="max-width:720px">
+<div class="row"><input name="ten" placeholder="Họ và tên" required><input name="sdt" placeholder="Số điện thoại / Zalo" required></div>
+<div class="row"><select name="nhom"><option>Nhóm đối tượng</option><option>Người thu nhập thấp</option><option>Công nhân, người lao động</option><option>Cán bộ, công chức, viên chức</option><option>Lực lượng vũ trang</option><option>Khác</option></select><select name="duan"><option>Khu vực quan tâm</option><option>Phía Nam (Thanh Oai, Thường Tín, Hà Đông)</option><option>Long Biên – Gia Lâm</option><option>Phía Bắc (Đông Anh)</option><option>Phía Tây (Hoài Đức, Thạch Thất, Hòa Lạc)</option><option>Chưa xác định</option></select></div>
+<textarea name="ghichu" rows="3" placeholder="Câu hỏi của bạn (không bắt buộc)"></textarea>
+<label class="consent"><input type="checkbox" required> Tôi đồng ý để Thủ tục NOXH dùng họ tên, số điện thoại này để liên hệ tư vấn nhà ở xã hội; thông tin không chia sẻ cho bên thứ ba khi chưa có đồng ý của tôi.</label>
+<button class="btn" type="submit">Gửi đăng ký</button>
+<p id="fmok" style="display:none;color:var(--g);font-weight:700;margin:12px 0 0">Đã nhận đăng ký, chúng tôi sẽ liên hệ trong ngày làm việc.</p>
+</form></div></section>
+
+<footer><div class="wrap"><b>Thủ tục NOXH</b> – trang thông tin, tư vấn hồ sơ nhà ở xã hội độc lập; không phải trang của chủ đầu tư hay cơ quan nhà nước. Thông tin theo Luật Nhà ở 2023, NĐ 100/2024, NĐ 261/2025, TT 05/2024, TT 32/2025, TT 08/2026/TT-BXD; cập nhật 11/2026.<br>Hotline / Zalo: <a href="tel:0915683568" style="color:#fff">0915 683 568</a> · Email: <a href="mailto:lienhe@dieukiennhaoxahoi.vn" style="color:#fff">lienhe@dieukiennhaoxahoi.vn</a></div></footer>
+<a class="float" href="https://zalo.me/0915683568" target="_blank" rel="noopener">Zalo tư vấn</a>
+
+<script>
+const A={},order=['dt','ls','nha','hn','tn'];let hist=[];
+const qs=[...document.querySelectorAll('.q')],pb=document.getElementById('pb'),bk=document.getElementById('bk');
+function show(k){qs.forEach(q=>q.classList.toggle('on',q.dataset.k===k));pb.style.width=(order.indexOf(k)/order.length*100)+'%';bk.style.display=hist.length?'inline':'none';
+ if(k==='tn'){const m={dt:20,dtcon:30,kh:40}[A.hn];document.getElementById('tnhint').textContent=A.hn==='kh'?'Nhập tổng thu nhập của hai vợ chồng. Mức tối đa: 40 triệu.':'Mức tối đa: '+m+' triệu.';}}
+function next(k){const i=order.indexOf(k);let n=order[i+1];
+ if(k==='dt'&&['uu','sv','khac','lltv'].includes(A.dt)&&A.dt!=='lltv'){ if(A.dt!=='uu'){return result();} }
+ if(k==='hn'&&(A.dt==='uu'||A.dt==='lltv'))return result();
+ if(!n)return result();hist.push(k);show(n);}
+document.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{const k=b.closest('.q').dataset.k;A[k]=b.dataset.v;next(k)});
+document.getElementById('tnok').onclick=()=>{A.tn=parseFloat(document.getElementById('tnv').value);if(isNaN(A.tn))return;result()};
+bk.onclick=()=>{const k=hist.pop();document.getElementById('res').classList.remove('on');show(k)};
+document.getElementById('again').onclick=()=>{hist=[];for(const k in A)delete A[k];document.getElementById('res').classList.remove('on');show('dt')};
+function result(){qs.forEach(q=>q.classList.remove('on'));bk.style.display='none';pb.style.width='100%';
+ let st='ok',li=[];
+ if(A.dt==='sv'){st='mid';li.push('Học sinh, sinh viên chỉ được THUÊ nhà ở xã hội trong thời gian học, không được mua.');}
+ else if(A.dt==='khac'){st='mid';li.push('Cần xác định đúng nhóm đối tượng theo Điều 76 Luật Nhà ở 2023 – đăng ký để được tư vấn.');}
+ else{
+  if(A.ls==='roi'){st='no';li.push('Đã từng mua, thuê mua NOXH hoặc hưởng hỗ trợ nhà ở tại Hà Nội thì không được mua tiếp.');}
+  if(A.nha==='co'&&A.dt!=='uu'){st='no';li.push('Đang có nhà tại Hà Nội từ 15 m²/người trở lên – chưa đáp ứng điều kiện nhà ở.');}
+  if(A.nha==='co'&&A.dt==='uu'){if(st!=='no')st='mid';li.push('Hộ bị thu hồi đất chưa được bồi thường bằng nhà, đất không xét điều kiện nhà ở; người có công, hộ nghèo, cận nghèo vẫn phải đáp ứng – cần tư vấn cụ thể.');}
+  if(A.nha==='nho')li.push('Có nhà dưới 15 m²/người: dùng Mẫu 03 thay Mẫu 02.');
+  if(A.dt==='uu')li.push('Nhóm người có công, hộ nghèo, cận nghèo, bị thu hồi đất: không phải chứng minh thu nhập.');
+  else if(A.dt==='lltv'){if(st!=='no')st='mid';li.push('Lực lượng vũ trang: trần thu nhập tính theo lương sĩ quan cấp Đại tá – cần đối chiếu bảng lương cụ thể.');}
+  else if(A.tn!==undefined){const m={dt:20,dtcon:30,kh:40}[A.hn];if(A.tn>m){st='no';li.push('Thu nhập '+A.tn+' triệu vượt mức tối đa '+m+' triệu/tháng.');}else li.push('Thu nhập trong mức cho phép (tối đa '+m+' triệu/tháng).');}
+  if(A.hn==='kh')li.push('Đã kết hôn: vợ/chồng cũng phải đáp ứng điều kiện nhà ở và cùng kê khai.');
+ }
+ const r=document.getElementById('rst');r.className='st '+st;r.textContent={ok:'Bạn có thể ĐỦ điều kiện mua nhà ở xã hội',no:'Bạn CHƯA đủ điều kiện mua',mid:'Cần tư vấn thêm trường hợp của bạn'}[st];
+ document.getElementById('rli').innerHTML=li.map(x=>'<li>'+x+'</li>').join('');document.getElementById('res').classList.add('on');}
+document.querySelectorAll('#ho-so .tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#ho-so .tabs button').forEach(x=>x.classList.toggle('on',x===b));document.querySelectorAll('.doc').forEach(d=>d.classList.toggle('on',d.id===b.dataset.t))});
+document.querySelectorAll('#rg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#rg button').forEach(x=>x.classList.toggle('on',x===b));document.querySelectorAll('.pj').forEach(c=>c.style.display=(b.dataset.r==='all'||c.dataset.r===b.dataset.r)?'':'none')});
+document.getElementById('fm').onsubmit=e=>{e.preventDefault();document.getElementById('fmok').style.display='block';};
+</script>
+</body></html>
