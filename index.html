@@ -240,6 +240,6 @@ function result(){qs.forEach(q=>q.classList.remove('on'));bk.style.display='none
  document.getElementById('rli').innerHTML=li.map(x=>'<li>'+x+'</li>').join('');document.getElementById('res').classList.add('on');}
 document.querySelectorAll('#ho-so .tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#ho-so .tabs button').forEach(x=>x.classList.toggle('on',x===b));document.querySelectorAll('.doc').forEach(d=>d.classList.toggle('on',d.id===b.dataset.t))});
 document.querySelectorAll('#rg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#rg button').forEach(x=>x.classList.toggle('on',x===b));document.querySelectorAll('.pj').forEach(c=>c.style.display=(b.dataset.r==='all'||c.dataset.r===b.dataset.r)?'':'none')});
-document.getElementById('fm').onsubmit=e=>{e.preventDefault();document.getElementById('fmok').style.display='block';};
+document.getElementById('fm').onsubmit=e=>{e.preventDefault();const o=document.getElementById('fmok');o.innerHTML='Cảm ơn bạn! Để được tư vấn ngay, vui lòng nhắn Zalo <a href="https://zalo.me/0915683568" target="_blank">0915 683 568</a> kèm họ tên và nhóm đối tượng.';o.style.display='block';window.open('https://zalo.me/0915683568','_blank');};
 </script>
 </body></html>
